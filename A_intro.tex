@@ -1,17 +1,35 @@
-\section{INTRODUCTION}
+\section{Introduction}
 
 \begin{outline}
-    \1 What is an ungrounded haptic device? 
+    %  \1 Benefits of haptics in surgical training
+    %     \2 Cost of learning is high
+    %     \2 Haptics can speed learning (cite) 
+    \1 Handheld haptic devices
+        \2 benefits: can be mobile, large workspace, easy don and doffing
+        \2 current mobile, large workspace devices typically rely on simple haptic effects (vibration)
     \1 What are the extra challenges?
-    \2 No net forces and torques.
-    \2 Can be unclear what the user's response will be
-    \2 Can vary by user, user's arm/hand muscle activation, stiffness or size of users' hands, how they hold the device
-    
-    \1 What have other researchers done, and why didn't it work? 
-    \2 \cite{Walker2017} used gaussian processes to model users responses to torque cues to guide them toward target orientations, challenges fitting the users' data well
-    \2 GP was too slow to do online adaptation
-    \2 device had too much variability because of asymmetric torque pulses
-    
-    \1 What did we do? And what was the outcome? 
-    \2 applied model based optimization to a device with more clear inputs
+        \2 No net forces and torques.
+        \2 Can't completely prescribe or restrict user's movements 
+    \1 What have other researchers done, and what are its limitations?
+        \2 Grippers: no fingertip tangential forces, (why is tangential skin deformation important)
+            \3 Kuchenbecker, Pierce teleoperation gripper \cite{Pierce201}
+            \3 CLAW \cite{Choi2018} (check page num)
+            \3 Wolverine? Counts as holable?
+        \2 Palm based force devices, not suitable for fine manipulation tasks like surgical training
+            \3 \cite{Walker2017} torque feedback 
+            \3 Directional handle in CHI paper
+            \3 Provancher skin stretch handle \cite{Gleeson2009}
+            \3 Haptic links \cite{Strasnick2018} (check page num)
+        \2 Texture rendering: lack fingertip force information
+            \3 haptic revolver \cite{Whitmire2018}
+            \3 Haptic pen (Culbertson)
+            \3 CLAW
+        \2 Wearable fingertip devices (Prattichizo, Schorr), but don't provide kinesthetic resistance to grip force, donning/doffing takes effort \cite{Pacchierotti2017} (update vol., page num)
+    \1 Our device 
+        \2 A 2-dof pantograph mechanism on the index and thumb provide tangential skin-deformation 
+        \2 At the hinge between the thumb abd index finger, a motor provides grip resistence 
+        \2 We demonstrate that users can be guided to move in two translation and two rotation directions
+        \2 In a demo application, users completed a needle passing task with haptic guidance from the device (maybe)
+
 \end{outline}
+
