@@ -2,15 +2,28 @@
 
 \subsection{Design}
 \begin{outline}
-\1 Two pantagraph mechanisms providing 2DOF kinesthetic forces to fingertips
+\1 Figures: Device drawing with photo of real hand
+\1 Two pantagraph mechanisms provide 2DOF kinesthetic forces to fingertips
 \1 Reaction forces on palm at handle
+\1 Grip force:
+	\2 Pololu micro metal gear motor 50:1 ratio 
+	\2 motor provides resistance from objects pinched in the fingers
+
+\1 Pantographs: 
+	\2 3D printed links with pin joints
+	\2 Center fingerpad spins freely 
+	\2 Delrin (?) on fingerpad to maintain good contact with fingerpad
+	\2 Nylon washer on back of pantograph to allow it to move smoothly over the back support
+	\2 Faulhaber micro motors with encoders
+	\2 Forward and inverse kinematics as described in \cite{Campion2005}
+\1 Adjustable handle to accomodate different size hands, foam wrapped
+
 
 \end{outline}
 
 \subsection{System}
 \begin{outline}
+\1 Figure: Whole setup with tracker and headphones and computer screen
 \1 Ascension TRAKstar magnetic tracking system records position and orientation of handle at XXX Hz
-\1 Magnetic tracking and motor actuation done through a Visual Studio program with a Sensoray 826 
-\1 Modeling and MPC (or MCTS) implemented in Julia. Using Ipopt Optimization package.
-\1 Visual Studio program and Julia optimal control communicate through ZMQ
+\1 Magnetic tracking and motor actuation through a Visual Studio C++ program with a Sensoray 826 
 \end{outline}

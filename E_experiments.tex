@@ -1,3 +1,32 @@
-\section{Validation}
-\subsection{Simulations}
-\subsection{User Study}
+\section{User Responses to Guidance Cues}
+To demonstrate that the device can provide directional haptic guidance in four degrees of freedom, we conducted a two-part user study with XXXX users, ranging in age from XXX to XXX. All users were right handed (necessary?). XXX were female, and XXX were male. The experimental protocol was approved by Stanford University IRB XXXXXXX. In both parts of the study, users were seated at computer, holding the device in their right hand. They wore headphones to mask any noises from the haptic device.
+
+\subsection{Unconstrained Movements}
+In the first part of the study, we asked users to move their hands in response to haptic cues they felt, with no instructions on what each cue intended to convey. We used eight direction cues, which we call forward, backward, up, down, twist left, twist right, tilt left, and tilt left. They are shown in Fig. XXXX. Users experienced each cue 20 times in a randomized order. They started each trial by pressing the space bar of the computer keyboard. The fingerpads moved in the corresponding direction for XXX seconds, then they returned to the center position for XXX seconds. We recorded the ensuing (right word?) motion of the user's hand.
+After three seconds, the computer screen prompted the user to return their hand to a neutral position. Users completed twenty trials of each cue.
+
+\subsection{Forced Choice Experiment}
+In the second part of the experiment, we repeated the same cues but asked users to select using a keyboard the direction of the cue they felt rather than move their hand. Users completed ten trials of each cue. 
+
+
+\begin{outline}
+\1 Additional things we could vary: 
+	\2 magnitude
+	\2 speed
+\end{outline}
+
+\subsection{Results}
+\begin{outline}
+\1 Plot of fingerpad and hand movements for all directions, mean and standard deviation of trajectories (for each subject?)
+\1 Confusion matrix of keyboard responses
+\end{outline}
+
+
+
+\section{Demonstration of Surgical Training Simulation}
+After completing the guidance cue experiments, the same XXXX users were asked to interact with a virtual environment using the haptic device. The virtual environment, which was generated using CHAI3D (CITE), was based on one of the tasks included in the Fundamentals of Laparoscopic Surgery, and is shown in Fig. XXXX. Users were asked to place blocks onto pegs with and without the haptic feedback and discuss their experiences. 
+
+The forces on each finger were calculated using CHAI3D's collision engine. Force was translated to proportional skin deformation at the magnitude XX N per mm, as determined in (CITE). All objects in the simulation had a stiffness of XXX, which was translated to torque resistance from the grip force motor. 
+
+All users preferred interacting with the simulation with haptic feedback (hopefully). Include quotes of their responses.
+
